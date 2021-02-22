@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"></meta><meta name="format-detection" content="telephone=no"></meta><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"></meta><meta name="search" content="default"></meta><meta name="use.ic" content="no"></meta><meta name="tocstandalone" content="no"></meta><script type="text/javascript">
+			var index;
+			var contentLanguage = 'en';
+			var enterKey = 'select';
+			
+					var anchoroption = true;
+				
+				var fuse_threshold = 0.3;
+			
+					var local_csh = false;
+				
+			var useanchorlinks = false;
+			</script><title>Kiosk application — workflow</title><link rel="stylesheet" type="text/css" href="../css/docbook.css"></link><link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"></link><link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css"></link><link rel="stylesheet" type="text/css" href="../css/font-awesome.css"></link><link rel="stylesheet" type="text/css" href="../css/roboto.font.css"></link><link rel="stylesheet" type="text/css" href="../css/sm-core-css.css"></link><link rel="stylesheet" type="text/css" href="../css/sm-simple.css"></link><link rel="stylesheet" type="text/css" href="../css/style-print.css"></link><link rel="stylesheet" type="text/css" href="../css/style-common.css"></link><link rel="stylesheet" type="text/css" href="../css/style.css"></link><link rel="stylesheet" type="text/css" href="../css/style-responsive.css"></link><script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script><script src="../js/materialize.min.js" type="text/javascript"></script><script src="../js/bootstrap.min.js" type="text/javascript"></script><script src="../js/purl.js" type="text/javascript"></script><script src="../js/jquery.event.move.js" type="text/javascript"></script><script src="../js/jquery.event.swipe.js" type="text/javascript"></script><script src="../js/jquery.sticky.js" type="text/javascript"></script><script src="../js/respond.min.js" type="text/javascript"></script><script src="../js/script.js" type="text/javascript"></script><script src="../js/clipboard.min.js" type="text/javascript"></script><script src="../js/lunr.js" type="text/javascript"></script><script src="../js/jquery.mark.min.js" type="text/javascript"></script><script src="js/data.js" type="text/javascript"></script><script src="../js/search.js" type="text/javascript"></script><script src="../js/csh.js" type="text/javascript"></script><meta name="generator" content="Paligo"></meta><link rel="prev" href="UUID-8398b260-6cfe-d571-f922-1cac53f59915.html" title="CashComplete™ On-Device purchases"></link><link rel="next" href="UUID-9327879b-213e-e89b-9407-e2701d5f302d.html" title="Advanced kiosk features"></link><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script><link rel="icon" href="/favicon.ico" type="image/x-icon"></link><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css"></link><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script><script type="text/javascript">
+			$(document).ready(function() {
+				
+				$('pre:not(.embedcode)').each(function() {
+					/**
+					 * @type {string}
+					 */
+					var language = $(this).data('language');
+
+					if (language === 'plaintext' || language === 'text') {
+						$(this).addClass(language).addClass('hljs');
+						return true;
+					}
+					else {
+						var clone = this.cloneNode(true);
+						hljs.highlightBlock(clone);
+						$(this).empty().append($(clone).contents());
+						$(this).attr("class", $(clone).attr("class"));
+					}
+				});
+			});
+			</script></head><body xmlns:php="http://php.net/xsl" data-link-prefix=""><div id="page" class="clearfix"><div id="header"><div class="container"><div id="logotype-container" class="pull-left"><a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype"></img></a></div><div id="pagetools-container" class="pull-right"><ul id="page-tools"><li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" id="search"></input></li><li class="page-tools-print"><a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a></li></ul></div></div></div><h1 id="publication-title"><span class="phrase">CashComplete™ On-Device</span> Software Development Kit Guide version 3.0.0</h1><div id="subheader-sticky-wrapper" class="sticky-wrapper"><div id="subheader"><div class="container"><div class="row"><div class="col-md-3 toc-title"><h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-8398b260-6cfe-d571-f922-1cac53f59915.html"><span class="glyphicon glyphicon-chevron-left"></span> </a><a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-9327879b-213e-e89b-9407-e2701d5f302d.html"><span class="glyphicon glyphicon-chevron-right"></span> </a></h2></div><div class="col-md-9 breadcrumb-container"><ul class="breadcrumb"><li class="breadcrumb-link"><span class="glyphicon glyphicon-home"></span> <a href="index-en.html"><span class="phrase">CashComplete™ On-Device</span> Software Development Kit Guide version 3.0.0</a></li><li class="breadcrumb-link"><a href="UUID-a90722ac-fd27-8578-43bf-25ec725be647.html">CashComplete™ On-Device Software Development Kit Guide</a></li><li class="breadcrumb-link"><a href="UUID-28d0d578-3fa4-4bc2-cb29-0f487a077613.html">Purchases, payments, and kiosks</a></li><li class="breadcrumb-node">Kiosk application — workflow</li></ul></div></div></div></div></div><div id="main-content"><div class="container"><div class="row"><div class="col-md-3 toc-container" id="toc-wrapper"><div id="toc-placeholder"><ul class="toc"><li><a href="UUID-a90722ac-fd27-8578-43bf-25ec725be647.html" class="topic-link"><span class="glyphicon glyphicon-chevron-right"></span> CashComplete™ On-Device Software Development Kit Guide</a><ul><li><a href="UUID-f95b3142-bdb2-0879-4dc9-5f0daac9b0bb.html" class="topic-link">User license agreement for PayComplete software</a></li><li><a href="UUID-2818c4e4-7c3e-a7a2-9a52-7769bcbf2f2f.html" class="topic-link">CashComplete™ On-Device and SDK compatibility matrix</a></li><li><a href="UUID-d2936ece-4207-e9a7-4c18-02fdf9b58ec2.html" class="topic-link">SDK documentation</a></li><li><a href="UUID-448d6bf9-75b2-362a-4278-c415bfd6b198.html" class="topic-link"><span class="glyphicon glyphicon-chevron-right"></span> Getting started with JDK</a><ul><li><a href="UUID-9cdaf9cd-b405-3fd4-3756-857e1618153d.html" class="topic-link">Setting up the JDK workspace</a></li><li><a href="UUID-9fc1b8c2-e957-b10b-391c-8751a2dde4f2.html" class="topic-link">Implementing a JDK plug-in</a></li><li><a href="UUID-9bd9d62b-dab7-4f0f-8bff-e7575d67d5ed.html" class="topic-link">Compiling a JDK plug-in</a></li><li><a href="UUID-e88e8bfa-591a-6c32-3131-970e449fafc9.html" class="topic-link">Installing a JDK plug-in</a></li></ul></li><li><a href="UUID-d55347a6-a74a-871d-4e52-d5ae920984f8.html" class="topic-link"><span class="glyphicon glyphicon-chevron-right"></span> Getting started with Eclipse</a><ul><li><a href="UUID-7dc0d9cc-a870-58bd-707a-d9dc282095be.html" class="topic-link">Setting up the Eclipse workspace</a></li><li><a href="UUID-d2b1e921-9643-0d47-6514-b50506884804.html" class="topic-link">Implementing an Eclipse plug-in</a></li><li><a href="UUID-b71af4e8-8c9f-348f-b545-d8ab425b999f.html" class="topic-link">Compiling an Eclipse plug-in</a></li><li><a href="UUID-a7d5b6d7-94d7-6e45-4e73-502014e5f079.html" class="topic-link">Installing an Eclipse plug-in</a></li></ul></li><li><a href="UUID-7318a2d9-4028-1f8d-f5c5-56a7166ed74d.html" class="topic-link"><span class="glyphicon glyphicon-chevron-right"></span> Inside the SDK</a><ul><li><a href="UUID-a42da773-7b3b-0d4b-ad89-0a6fe86e2fe5.html" class="topic-link">Compiling an SDK plug-in</a></li><li><a href="UUID-e77b5766-58ad-3def-4fc8-bf97e71004ed.html" class="topic-link">Installing an SDK plug-in</a></li><li><a href="UUID-c854a932-408e-e97c-bdb6-a2eb0d880e28.html" class="topic-link">SDK architecture</a></li><li><a href="UUID-964d2e7f-09f7-fa43-321b-b67c706e600c.html" class="topic-link">SDK flows</a></li><li><a href="UUID-2ac7e401-fef8-9b3c-2332-ec56efd8ceb3.html" class="topic-link">CashComplete™ On-Device and plug-in flowchart</a></li><li><a href="UUID-7cd7ffff-cd2e-88dd-3058-e655930232f8.html" class="topic-link">SDK managers</a></li><li><a href="UUID-ca45f3e6-b822-6cbb-8be8-16de54a34ca5.html" class="topic-link">CashComplete™ On-Device sessions</a></li><li><a href="UUID-d722c35d-ceca-013d-c8f3-d9ba476f9919.html" class="topic-link">CashComplete™ On-Device permissions</a></li><li><a href="UUID-cdf34923-71a5-721d-1a1f-7a1e0fc0dce6.html" class="topic-link">CashComplete™ On-Device operator service menu</a></li><li><a href="UUID-c467f34c-3db9-9860-b34f-18bf1612fa7f.html" class="topic-link">Custom device integration</a></li></ul></li><li><a href="UUID-24f67e04-0ea1-2411-fbb4-6444c10be3be.html" class="topic-link"><span class="glyphicon glyphicon-chevron-right"></span> SDK troubleshooting</a><ul><li><a href="UUID-5061e5d4-ffa7-293a-474f-e9f827119caa.html" class="topic-link">Plug-in does not seem to start</a></li><li><a href="UUID-5e85eb81-eb71-5334-cbce-f2f8fc9f2d29.html" class="topic-link">There is no button for a plug-in service</a></li><li><a href="UUID-2689cf83-1a8d-7959-8b01-db48c94ed4f1.html" class="topic-link">CashComplete™ On-Device does not seem to start</a></li><li><a href="UUID-66315ac4-fbac-fdac-3760-85189928b385.html" class="topic-link">IOJDepositManager.beginTransaction() becomes unresponsive</a></li></ul></li><li><a href="UUID-901e1ea4-0868-7aae-f60a-6bedc6ecfa0d.html" class="topic-link"><span class="glyphicon glyphicon-chevron-right"></span> SDK examples — prerequisites</a><ul><li><a href="UUID-d06944a7-6886-3d51-e69e-390225773217.html" class="topic-link">Compiling and installing examples</a></li><li><a href="UUID-ba1e99ec-4640-b4b9-0c82-2cd0bc3d569f.html" class="topic-link">Example plug-ins</a></li></ul></li><li><a href="UUID-bb541365-4925-7f31-7db5-27b9902aeeac.html" class="topic-link">SDK 3.0.0 - configuration handling</a></li><li><a href="UUID-83b41fe1-9cbd-ff16-c99f-02f4473d914a.html" class="topic-link"><span class="glyphicon glyphicon-chevron-right"></span> SDK 2.0.0</a><ul><li><a href="UUID-d5773f11-97c2-ddc9-ef78-fed8029fd98f.html" class="topic-link">New user interface framework</a></li><li><a href="UUID-636c17aa-7f0d-bffe-e77c-0ffda4bd3d3c.html" class="topic-link">Known flows launching process</a></li><li><a href="UUID-0aa70923-d132-3015-a381-2af11f2c5ef7.html" class="topic-link">SDK 2.0.0 - miscellaneous information</a></li></ul></li><li><a href="UUID-f5224b30-6ab9-7d7e-2758-993c7718b233.html" class="topic-link">Icons for services</a></li><li><a href="UUID-28d0d578-3fa4-4bc2-cb29-0f487a077613.html" class="topic-link"><span class="glyphicon glyphicon-chevron-right"></span> Purchases, payments, and kiosks</a><ul><li><a href="UUID-8398b260-6cfe-d571-f922-1cac53f59915.html" class="topic-link">CashComplete™ On-Device purchases</a></li><li><a href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html" class="topic-link">Kiosk application — workflow</a></li><li><a href="UUID-9327879b-213e-e89b-9407-e2701d5f302d.html" class="topic-link">Advanced kiosk features</a></li><li><a href="UUID-2558a1cc-0b30-bc42-a498-0eb806eb80eb.html" class="topic-link">Purchase accounting</a></li></ul></li><li><a href="UUID-8c537626-5f5c-af1d-46e8-7c6feb1edec1.html" class="topic-link">Revision history</a></li></ul></li></ul></div></div><div class="col-md-9 content-container" id="content-wrapper"><a accesskey="p" id="header-navigation-prev" class="pull-left prev visible-lg visible-md" href="UUID-8398b260-6cfe-d571-f922-1cac53f59915.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" id="header-navigation-next" class="pull-right next visible-lg visible-md" href="UUID-9327879b-213e-e89b-9407-e2701d5f302d.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a><div id="topic-content"><section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="UUID-8812d684-c189-64a0-21bf-a6526b7da727" data-publication-date="" id="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1"><div class="titlepage"><div><div class="title"><h4 class="title">Kiosk application — workflow</h4></div></div></div><p>You can extend the standard functionality and add new user flows to <span class="phrase">CashComplete™ On-Device</span> by creating a number of plug-ins. The added user flows are then available from the <span class="phrase">CashComplete™ On-Device</span> user interface.</p><div class="mediaobject"><table class="image-viewport" style="border-collapse:collapse;border:0;
+                                width:600px;
+                            "><tr><td style="padding:0;"><img src="image/uuid-03d759b0-fbab-c334-e88c-950a45e4a1ac-en.png" style="max-width: 600px; " alt="kiosk_ccod_architecture.pdf"></img></td></tr></table><div class="caption"><p>A standard CCOD flow (for more information, see section <span class="phrase">CashComplete™ On-Device</span> and plug-in flowchart) and a custom plug-in flow for a kiosk application</p></div></div><p>This workflow describes how you build a kiosk, such as a train ticket machine or a vending machine, where you take full control of the machine, add your own GUI, and only use <span class="phrase">CashComplete™ On-Device</span> as a middle-ware to handle the hardware and facilitate the purchase/payment.</p><p>When you customize the GUI (hide the standard <span class="phrase">CashComplete™ On-Device</span> user interface), you can choose to develop that GUI with whatever technique you are comfortable with, such as HTML, Angular, or React.</p><p>The examples in this workflow use the standard Swing framework. Although it might not be optimal for building a modern GUI for a kiosk, it is native java and is easier to describe. You can replace it with whatever you want to use.</p><p>Follow these instructions to complete the kiosk application:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html#UUID-fcb8142a-3950-6c56-fabe-479056847533" title="Three main classes"><span class="xreftitle">Three main classes</span></a></p></li><li class="listitem"><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html#UUID-648343ef-3ff6-beca-9d51-2c44d04fc766" title="User interface management"><span class="xreftitle">User interface management</span></a></p></li><li class="listitem"><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html#UUID-a81ffe8b-1ca3-c6b9-12b6-4082f244c543" title="Model View Controller"><span class="xreftitle">Model View Controller</span></a></p></li><li class="listitem"><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html#UUID-a81d5fca-68a5-8ef3-2dd1-572900d14239" title="How to switch over to CashComplete™ On-Device"><span class="xreftitle">How to switch over to <span class="phrase">CashComplete™ On-Device</span></span></a></p></li><li class="listitem"><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html#UUID-fcb8aba8-7829-cc50-300b-da4cd8cf99fa" title="User"><span class="xreftitle">User</span></a></p></li><li class="listitem"><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html#UUID-1d109a23-9a18-f33b-e04a-6281383da1ed" title="Kiosk app"><span class="xreftitle">Kiosk app</span></a></p></li></ul></div><div class="informalexample seealso"><p>See also</p><p><a class="xref" href="UUID-28d0d578-3fa4-4bc2-cb29-0f487a077613.html" title="Purchases, payments, and kiosks"><span class="xreftitle">Purchases, payments, and kiosks</span></a></p><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html#UUID-fcb8142a-3950-6c56-fabe-479056847533" title="Three main classes"><span class="xreftitle">Three main classes</span></a></p><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html#UUID-648343ef-3ff6-beca-9d51-2c44d04fc766" title="User interface management"><span class="xreftitle">User interface management</span></a></p><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html#UUID-a81ffe8b-1ca3-c6b9-12b6-4082f244c543" title="Model View Controller"><span class="xreftitle">Model View Controller</span></a></p><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html#UUID-a81d5fca-68a5-8ef3-2dd1-572900d14239" title="How to switch over to CashComplete™ On-Device"><span class="xreftitle">How to switch over to <span class="phrase">CashComplete™ On-Device</span></span></a></p><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html#UUID-fcb8aba8-7829-cc50-300b-da4cd8cf99fa" title="User"><span class="xreftitle">User</span></a></p><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html#UUID-1d109a23-9a18-f33b-e04a-6281383da1ed" title="Kiosk app"><span class="xreftitle">Kiosk app</span></a></p></div><section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="UUID-745ab0a2-b8f2-789b-fec3-116891f20ec4" data-publication-date="" id="UUID-fcb8142a-3950-6c56-fabe-479056847533"><div class="titlepage"><div><div class="title"><h5 class="title">Three main classes</h5></div></div></div><p>In any plugin you write, you need at least two classes. For kiosk applications, you also need a class for managing the GUI. In our example:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>IOJPlugin</p></li><li class="listitem"><p>IOJFlow</p></li><li class="listitem"><p>JFrame (used for managing the UI)</p></li></ul></div><p>The flow is registered as a boot flow because the flow should start when the machine starts. If someone has logged in to the standard <span class="phrase">CashComplete™ On-Device</span> flows and logs out, you want to end up in the plugin flow again. This is how a boot flow behaves.</p><pre class="programlisting">public class SimpleKiosk implements IOJPlugin
+{
+    @Override
+    public void initialize( IOJRegistrator registrator )
+    {
+        try
+        {
+            registrator.registerBootFlow( new SimpleKioskFlow() );
+        } catch ( Exception e ) {}
+    }
+}
+
+public class SimpleKioskFlow implements IOJFlow
+{
+    @Override
+    public void run( IOJFlowSession session )
+    {
+    }
+}
+
+public class SimpleKioskFrame extends JFrame
+{
+    private static final long serialVersionUID = 1L;
+    
+    public SimpleKioskFrame( final IOJFlowSession session )
+    {
+        super( "Simple Kiosk" ); 
+        setUndecorated( true );
+        setDefaultCloseOperation( EXIT_ON_CLOSE );
+        setExtendedState( MAXIMIZED_BOTH );
+    }
+}</pre><div class="informalexample seealso"><p>See also</p><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html" title="Kiosk application — workflow"><span class="xreftitle">Kiosk application — workflow</span></a></p></div></section><section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="UUID-049a7209-2194-ac72-6e28-c6e760a965e2" data-publication-date="" id="UUID-648343ef-3ff6-beca-9d51-2c44d04fc766"><div class="titlepage"><div><div class="title"><h5 class="title">User interface management</h5></div></div></div><p>This example describes how to replace the user interface. Whenever the flow is started, the new GUI should be displayed hiding the <span class="phrase">CashComplete™ On-Device</span> GUI.</p><div dir="ltr" class="note"><h3 class="title">Note</h3><p>The order is important to make sure Windows desktop doesn't appear between the calls.</p></div><p>The example ensures that if/when the flow’s run method exits, it switches back to the <span class="phrase">CashComplete™ On-Device</span> flow. This is necessary as a precaution in case the GUI is hidden. If no fallback exists, this would dead-lock the machine. The fallback is added in a 'finally' block.</p><pre class="programlisting">public class SimpleKioskFlow implements IOJFlow
+{
+    @Override
+    public void run( IOJFlowSession session )
+    {
+        SimpleKioskFrame gui = new SimpleKioskFrame( session );
+        try
+        {
+            gui.setVisible( true );
+            session.getUIManager().setSystemWindowsVisible( false );
+            
+            // ... implement the kiosk flow
+        }
+        finally
+        {
+            session.getUIManager().setSystemWindowsVisible( true );
+            gui.dispose();
+        }
+    }
+}</pre><div class="informalexample seealso" id="UUID-648343ef-3ff6-beca-9d51-2c44d04fc766_informalexample-idm33164553782876"><p>See also</p><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html" title="Kiosk application — workflow"><span class="xreftitle">Kiosk application — workflow</span></a></p></div></section><section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="UUID-ce98d68a-6ee6-a823-35aa-362acae950d0" data-publication-date="" id="UUID-a81ffe8b-1ca3-c6b9-12b6-4082f244c543"><div class="titlepage"><div><div class="title"><h5 class="title">Model View Controller</h5></div></div></div><p>Model View Controller (MVC) is one of the traditional architectural patterns for software development. It's a good principle to use when implementing an SDK plugin using your own GUI. You automatically end up with at least two threads in your plugin (at least, that is the case if the GUI is done using Swing):</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>An SDK flow thread that calls the run() method of your flow</p></li><li class="listitem"><p>Event Dispatch Thread of Swing</p></li></ul></div><p>You also get a third thread, called SDK event thread, that calls all event listeners you have registered.</p><p>This can easily get complicated. The MVC pattern makes it less complicated.</p><p>You should try to implement the entire flow (Control) of your application in the SDK flow thread in the context of the run()-method. You should keep the GUI (View) in the JFrame class and the event dispatch thread.</p><p>Passing control between these two threads is simple using one construct from the SDK and one from Swing.</p><p>To pass a GUI event over from the Event Dispatch Thread to the SDK flow thread, you can use the concept of key-strokes in the SDK (IOJUIManager). The GUI class can use the method injectKey() to post a key-event, and the SDK flow thread calls waitForKey() to block until a certain key is pressed.   This becomes an asynchronous notification, which is normally what you want when passing a notification from the GUI to the Controller to prevent the GUI from freezing.  </p><p></p><pre class="programlisting">public class SimpleKioskFlow implements IOJFlow
+{
+    @Override
+    public void run( IOJFlowSession session )
+    {
+        SimpleKioskFrame gui = new SimpleKioskFrame( session );
+        try
+        {
+            gui.setVisible( true );
+            session.getUIManager().setSystemWindowsVisible( false );
+            
+            while ( true )
+            {
+                OJKey key = session.getUIManager().waitForKey( true, 0 ); 
+                // ... do something based on the key you got
+            }
+        }
+        finally
+        {
+            session.getUIManager().setSystemWindowsVisible( true );
+            gui.dispose();
+        }
+    }
+}
+
+public class SimpleKioskFrame extends JFrame
+{ 
+    private JButton actionButton = new JButton( "Do something" );
+    
+    public SimpleKioskFrame( final IOJFlowSession session )
+    {
+        // ...
+        
+        actionButton.addActionListener( ( ae ) -&gt;
+        {
+            session.getUIManager().injectKey( OJKey.KEY_F1 );
+        } );
+    }
+}</pre><p>You go the other way, from the SDK Flow Thread (the Control thread) to the Event Dispatcher Thread (the View thread) with a Swing helper class called SwingUtilities. You can use either the asynchronous SwingUtilities.invokeLater() or the synchronous SwingUtilities.invokeAndWait().  </p><p>For more information, see:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SwingUtilities.html#invokeLater-java.lang.Runnable- " target="_blank" rel="noopener">https://docs.oracle.com/javase/8/docs/api/javax/swing/SwingUtilities.html#invokeLater-java.lang.Runnable- </a></p></li><li class="listitem"><p><a class="link" href="https://docs.oracle.com/javase/8/docs/api/javax/swing/SwingUtilities.html#invokeAndWait-java.lang.Runnable-   " target="_blank" rel="noopener">https://docs.oracle.com/javase/8/docs/api/javax/swing/SwingUtilities.html#invokeAndWait-java.lang.Runnable- </a></p></li></ul></div><p>SDK flow thread:  </p><pre class="programlisting">gui.changeButtonName( "I was pressed" );
+
+In SimpleKioskFrame:
+
+public void changeButtonName( final String name )
+{
+    SwingUtilities.invokeLater( () -&gt;
+    {
+        actionButton.setText( name );
+    } );
+}</pre><div class="informalexample seealso" id="UUID-a81ffe8b-1ca3-c6b9-12b6-4082f244c543_informalexample-idm33164553844548"><p>See also</p><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html" title="Kiosk application — workflow"><span class="xreftitle">Kiosk application — workflow</span></a></p></div></section><section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="UUID-b1e11350-945f-3ef8-3f7d-2be4f9222a87" data-publication-date="" id="UUID-a81d5fca-68a5-8ef3-2dd1-572900d14239"><div class="titlepage"><div><div class="title"><h5 class="title">How to switch over to <span class="phrase">CashComplete™ On-Device</span></h5></div></div></div><p>The example shows how to make your own application and your own GUI to control the machine, using <span class="phrase">CashComplete™ On-Device</span> only as a middleware to control the hardware and to facilitate things like purchases, payments, and receipts.</p><p>This is mainly for the end customer flows and screens, such as the vending machine user interface or any other kiosk purpose. A kiosk also needs technical administration menus to refill cash dispensers, empty cash acceptance boxes, do cash inventory, print content reports, handle errors, and so on. This is where you can really leverage the benefit of having <span class="phrase">CashComplete™ On-Device</span>. You can write your application to completely focus on it’s core feature (vending products) and use <span class="phrase">CashComplete™ On-Device</span> for all other functions. To do so, you need a way to switch over to the <span class="phrase">CashComplete™ On-Device</span> GUI.</p><p>Switching over is easily done by returning from the run() method of your SDK flow. Before doing that, you need to make sure that an authorized <span class="phrase">CashComplete™ On-Device</span> user has successfully logged. If no authorized <span class="phrase">CashComplete™ On-Device</span> user is logged in, the machine could end up in a limbo state.</p><p>You need to figure out how the log-in procedure is initiated in your GUI. In our SimpleKiosk example, you double-click the header (the <span class="phrase">PayComplete®</span> logo).</p><p>Just like in the Model View Controller example, you inject a key that represents the attempt to log in to the technical menu, for example, OJKey.KEY_CANCEL.</p><p>For more information, see <a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html#UUID-a81ffe8b-1ca3-c6b9-12b6-4082f244c543" title="Model View Controller"><span class="xreftitle">Model View Controller</span></a>.</p><pre class="programlisting">private class SimpleKioskFlow implements IOJFlow
+{
+    @Override
+    public void run( IOJFlowSession session )
+    {
+        SimpleKioskFrame gui = new SimpleKioskFrame( session );
+        try
+        {
+            gui.setVisible( true );
+            session.getUIManager().setSystemWindowsVisible( false );
+            
+            while ( true )
+            {
+                OJKey key = session.getUIManager().waitForKey( true, 0 );
+                
+                if ( key == OJKey.KEY_CANCEL )
+                {
+                    if ( loginUser( session ) )
+                    {
+                        return;
+                    }
+                }
+                
+                // ... Handle other keys and functions...
+            }
+        }
+        finally
+        {
+            session.getUIManager().setSystemWindowsVisible( true );
+            gui.dispose();
+        }
+    }
+}</pre><p>This example calls a private helper method called loginUser(). This private helper method switches over to the <span class="phrase">CashComplete™ On-Device</span> GUI and shows a log-in screen. It attempts to log in a standard user from <span class="phrase">CashComplete™ On-Device</span>’s own user database. If it succeeds, it returns true. If it fails, it returns false.</p><p>This is the method as implemented in the SimpleKiosk example. The example is generic so you can use it for any kiosk you implement.</p><pre class="programlisting">private boolean loginUser( IOJFlowSession session )
+{
+    // The login procedure uses the standard CCOD GUI, so let's show that here
+    session.getUIManager().setSystemWindowsVisible( true );
+
+    session.getUserManager().beginLoginProcedure();
+    try
+    {
+        String id = session.getUIManager().inputNumericText(
+                "Enter ID", "", false, 15 );
+        if ( id != null )
+        {
+            String pin = session.getUIManager().inputNumericText(
+                    "Enter PIN", "", true, 15 );
+            if ( pin != null )
+            {
+                try
+                {
+                    session.getUserManager().loginUser( id, pin );
+                }
+                catch ( OJIncorrectPasswordException | OJUserNotFoundException e )
+                {
+                    HashMap&lt;IOJUIManager.OJKey, String&gt; tOkKey =
+                            new HashMap&lt;IOJUIManager.OJKey, String&gt;();
+                    tOkKey.put( IOJUIManager.OJKey.KEY_OK, "OK" );
+                    session.getUIManager().showTextScreen(
+                            "Incorrect user or pin", "", null, tOkKey );
+                    session.getUIManager().waitForKey( true, 5000 );
+                }
+            }
+        }
+        
+        if ( session.getUserManager().getCurrentUser() == null )
+        {
+            session.getUIManager().setSystemWindowsVisible( false );
+            return false;
+        }
+        return true;
+    }
+    finally
+    {
+        session.getUserManager().endLoginProcedure();
+    }
+}</pre><div class="informalexample seealso" id="UUID-a81d5fca-68a5-8ef3-2dd1-572900d14239_informalexample-idm33164553874904"><p>See also</p><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html" title="Kiosk application — workflow"><span class="xreftitle">Kiosk application — workflow</span></a></p><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html#UUID-a81ffe8b-1ca3-c6b9-12b6-4082f244c543" title="Model View Controller"><span class="xreftitle">Model View Controller</span></a></p></div></section><section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="UUID-4048d514-d4e1-00fe-c41d-e238e5564afa" data-publication-date="" id="UUID-fcb8aba8-7829-cc50-300b-da4cd8cf99fa"><div class="titlepage"><div><div class="title"><h5 class="title">User</h5></div></div></div><p>A purchase, deposit, or dispense requires that a user is logged in. It's sufficient that the default anonymous user is logged in, which is probably what you want for a kiosk. All you need to do is surround your purchase procedure with these two methods:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>session.getUserManager().loginDefaultUser();</p></li><li class="listitem"><p>session.getUserManager().logout();</p></li></ul></div><div class="informalexample seealso" id="UUID-fcb8aba8-7829-cc50-300b-da4cd8cf99fa_informalexample-idm33164553922528"><p>See also</p><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html" title="Kiosk application — workflow"><span class="xreftitle">Kiosk application — workflow</span></a></p></div></section><section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="UUID-75ba50e0-c139-2262-818f-214e86d7581f" data-publication-date="" id="UUID-1d109a23-9a18-f33b-e04a-6281383da1ed"><div class="titlepage"><div><div class="title"><h5 class="title">Kiosk app</h5></div></div></div><p>You now have all the bits and pieces to develop your own kiosk app. Just populate the SimpleKioskFrame with buttons for the different products, let the buttons send different OJKey values to the flow thread, which in turn performs the purchase.</p><p>For information on a simple purchase procedure, see <a class="xref" href="UUID-8398b260-6cfe-d571-f922-1cac53f59915.html#UUID-1955240a-5475-3b70-cef1-423cf87e0098" title="Simple purchase procedure"><span class="xreftitle">Simple purchase procedure</span></a>.</p><p>You can find the full example (SimpleKiosk) in the <code class="filename">Examples</code> folder of the SDK.</p><div class="informalexample seealso" id="UUID-1d109a23-9a18-f33b-e04a-6281383da1ed_informalexample-idm33164553955964"><p>See also</p><p><a class="xref" href="UUID-7311a90b-969c-17e6-cc79-2c1844c91ce1.html" title="Kiosk application — workflow"><span class="xreftitle">Kiosk application — workflow</span></a></p><p><a class="xref" href="UUID-8398b260-6cfe-d571-f922-1cac53f59915.html#UUID-1955240a-5475-3b70-cef1-423cf87e0098" title="Simple purchase procedure"><span class="xreftitle">Simple purchase procedure</span></a></p></div></section></section><div class="footer-content"><div class="additional-links"></div></div><footer></footer></div></div></div></div></div></div></body></html>
