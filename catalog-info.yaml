@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "backstage-docs"
+  description: "test"
+  annotations:
+    github.com/project-slug: robinschaaf/backstage-docs
+    backstage.io/techdocs-ref: url:https://github.com/robinschaaf/backstage-docs
+spec:
+  type: documentation
+  lifecycle: experimental
+  owner: "robinschaaf"
