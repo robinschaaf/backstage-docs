@@ -2,7 +2,7 @@ site_name: "backstage-docs"
 site_description: "test"
 
 nav:
-  - Homw: index.html
+  - Home: index.html
 
 plugins:
   - techdocs-core
