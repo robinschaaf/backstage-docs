@@ -1,8 +1,0 @@
-site_name: 'ccc-docs'
-site_description: 'Main documentation for Backstage features and platform APIs'
-
-nav:
-  - CCOD-SDK: './ccod-sdk/index.html'
-
-plugins:
-  - techdocs-core

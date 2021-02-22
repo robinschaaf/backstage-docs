@@ -2,6 +2,7 @@ site_name: "backstage-docs"
 site_description: "test"
 
 nav:
+  - Home: 'index.md'
   - CCOD-SDK: 'ccod-sdk/index.html'
 
 plugins:
